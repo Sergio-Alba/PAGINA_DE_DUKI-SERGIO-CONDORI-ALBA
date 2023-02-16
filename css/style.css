@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+} 
+
+/* AQUI LE PUSE UN FONDO A LAS PAGINAS QUE COPIE EL CODIGO DE UNA PAGINA EXTERNA   */
+body{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23510a6a'/%3E%3Cstop offset='1' stop-color='%23510a6a' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230f0080'/%3E%3Cstop offset='1' stop-color='%230f0080' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%235f0aea'/%3E%3Cstop offset='1' stop-color='%235f0aea' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23A113D4'/%3E%3Cstop offset='1' stop-color='%23A113D4' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231D00FF'/%3E%3Cstop offset='1' stop-color='%231D00FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    color: #fff;
+}
+
+
+/* HEADER  */
+.header{
+    background-color: #0000009d;
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+}
+.header--menu img{
+    width: 150px;
+    padding: 10px;
+    margin-left:70px;
+}
+.header--nav{
+    display: inline-block;
+    margin-left: 25em;
+    margin-bottom:8px;
+}
+.nav--a{
+    list-style: none;
+    margin: 10px;
+    padding: 10px 5px;
+    float: left;
+}
+.nav--a a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* MAIN PAGINA DE INICIO*/
+
+
+/* AQUI VA EL CONTENEDOR DE VA HACER QUE SE CENTRE EL CONTENIDO DE MAIN EN UN 70% DE LA PANTALLA  */
+.contenedor{
+    position: absolute;
+}
+.main__div--img{
+    width: 150px;
+    border-radius: 100px;
+    border: solid 2px #fff;
+    margin-top: 400px;
+    margin-left: 70px;
+}
+.div--h1{
+    position:relative;
+    font-size: 5em;
+    display: inline-block;
+    bottom: 50px;
+    left: 20px;
+}
+hr{
+    background-color: #fff;
+    height: 10px;
+    position: relative;
+    left: 250px;
+    bottom: 50px;
+}
+.main--video{
+    display: inline-block;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+.contenedor--centro{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.main--section{
+    height: 60%;
+    position: relative;
+    margin-top: 30px;
+}
+.section--parrafo{
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    font-size: large;
+    line-height: 2em;
+    text-align: center;
+    bottom: 10em;
+    margin: 40px;
+    
+}
+.section--img{
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    left:10px;
+}
+/* AQUI INTENTO COLOCAR UN CARRUSEL DE IMAGENES */
+.div--imagenes {
+    margin: 20px 0;
+
+}
+.imagenes{
+    display: inline-block;
+    width: 20vw;
+    margin: 41px;
+}
+.imagenes.max{
+    margin: 0;
+    width: 25vw;
+}
+/* AQUI VA EL TEXTO CORRESPONDIENTE DEL AUDIO */
+.main--section3{
+    display: inline-block;
+    width: 45%;
+}
+.section--h2{
+    position: relative;
+    bottom: 180px;
+    text-align: center;
+    font-size: large;
+    line-height: 2em;
+}
+.section--p{   
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    left: 130px;
+    bottom: 150px;
+    text-align: center;
+    font-size: large;
+    line-height: 2em;
+}
+/* SECCTION DEL AUDIO */
+.section--audio {
+    background-color: rgba(41, 41, 41, 0.695);
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    margin: 5rem 0;
+    padding: 20px;
+    margin-left: 10rem;
+}
+.imagenes--audio {
+    width: 100%;
+    border-radius: 10px;
+}
+audio{
+    background-color: rgba(255, 255, 255, 0.601);
+    width: 100%;
+}
+/* AQUI VA LA SECTION DE COLABORACION CON UN IFRAME DE LA COLABORACION  */
+.section--text{
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    left: 10rem;
+    font-size: large;
+    line-height: 2em;
+}
+.section--h3{
+    text-align: center;
+    margin: 50px 0;
+}
+.section--parrafo1{
+    margin: 50px 0;
+}
+.Section--iframe{
+    width: 100%;
+    margin: 5rem 0;
+}
+
+
+.table{
+    border-collapse: collapse;
+    margin-left: 20rem;
+    margin: 2rem;
+}
+
+td , th{
+    border: solid 2px #fff;
+    padding: 0.5rem;
+}
+
+.contenedor__formulario{
+    position: relative;
+    height: 85vh;
+    top: 150px;
+    padding: 0 10rem;
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(52, 52, 52);
+    height: 7rem;
+    position: none;
+    left: 0;
+    bottom: 0;
+}
+.footer__div{
+    display: inline-block;
+    width: 60%;
+    margin-left: 27rem;
+    margin-top: 2rem;
+}
+.a__img{
+    width: 50px;
+    padding: 10px;
+    margin: 0 10px;
+}
