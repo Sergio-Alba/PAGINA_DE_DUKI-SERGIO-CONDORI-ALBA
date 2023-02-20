@@ -7,117 +7,171 @@
 
     <link rel="shortcut icon" href="./assets/img/favicon duki.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>DUKI</title>
+
+    <title>DUKI PAGINA</title>
 </head>
 <body>
-    <header class="header">
-        <!-- ESTE ES EL HEADER  QUE TIENE UNA POSITION FIXED-->
-        <div class="header--menu">
-            <!-- ESTE ES EL LOGO DE LA PAGINA -->
-            <img  src="./assets/img/logo duki.png" alt="DUKI LOGO">
-            <!-- ESTE ES LA BARRA DE NAVEGACION DEL LA PAGINA  -->
-            <nav class="header--nav">
-                <ul class="nav--ul">
-                    <li class="nav--a">
-                        <a class="nav--link" href="#">INICIO</a>
-                    </li>
-                    <li class="nav--a">
-                        <a class="nav--link" href="./pages/albunes.html">ALBUNES</a>
-                    </li>
-                    <li class="nav--a">
-                        <a class="nav--link" href="./pages/videos.html">VIDEOS</a>
-                    </li>
-                    <li class="nav--a">
-                        <a class="nav--link" href="./pages/conciertos.html">CONCIERTOS</a>
-                    </li>
-                    <li class="nav--a">
-                        <a class="nav--link" href="./pages/biografía.html">BIOGRAFÍA</a>
-                    </li>
-                    <li class="nav--a">
-                        <a class="nav--link" href="./pages/suscribirse.html">SUSCRIBIRSE</a>
-                    </li>
-                </ul>
-            </nav>
-    </div>
-    </header> 
-    <main class="main">
-        <div class="contenedor">
-            <div class="main--div">
-                <img src="./assets/img/duki img principal.jpg
-                " alt="duki imagen" class="main__div--img">
-                <h1 class="div--h1">DUKI</h1><hr>
-            </div>
-        </div>
-        <video class="main--video" onloadedmetadata="this.mu" autoplay loop>
-            <source src="./assets/VIDEO/duki video.mp4">
-        </video>
-        <div class="contenedor--centro">
-            <section class="main--section">
-                <p class="section--parrafo p1"> Mauro Ezequiel Lombardo conocido artísticamente como Duki nació en el año 1996 en Buenos Aires, Argentina. Criado en una casa de melómanos, Duki empezó sentirse atraído por el Hip Hop a la edad de siete años, y entre otras muchas cosas, empezó a sentir mucha atracción por el rap estadounidense. Sin duda alguna las influencias de Duki son esenciales para entender el estilo de este artista de trap.</p>
-                <img src="./assets/img/9 duki imagen.jpg" alt="foto de duki" class="section--img 1">
-            </section>
-            <section class="main--section">
-                <img src="./assets/img/4 duki imagen.jpg" alt="foto de duki" class="section--img 2">
-                <p class="section--parrafo  p2">
-                DUKI SE HA CONVERTIDO EN UNO DE LOS EXPONENTES DEL TRAP DE ARGENTINA EN UN TIEMPO RECORD. SU ESTILO ES FRESCO, ES ÚNICO Y MARCADO POR SUS INICIOS EN EL FREESTYLE. UNA RIMA RÁPIDA. DUKI ES EL TRAPERO ARGENTINO QUE LA ESTA ROMPIENDO DENTRO Y FUERA DE SU PAIS.
-                </p>
-            </section>
-            <div class="div--galeria">
-                <div class="div--imagenes">
-                    <img src="./assets/img/3 duki imagen.jpg" alt="foto de duki" class="imagenes">
-                    <img src="./assets/img/7 duki imagen.jpg" alt="foto de duki"  class="imagenes max">
-                    <img src="./assets/img/10 duki imagen.jpg"alt="foto de duki" class="imagenes">
+    <header class="header container-fluid  sticky-top ">
+        <nav class=" navbar navbar-expand-lg navbar-dark ">
+            <div class="nav__div container p-2 ">
+                <a class="navbar-brand" href="#">
+                    <img class="m-auto" src="./assets/img/logo duki.png" alt="LOGO DUKI"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/albunes.html">ALBUNES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/videos.html">VIDEOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/conciertos.html">CONCIERTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/biografía.html">BIOGRAFÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/suscribirse.html">SUSCRIBIRSE</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="div--section">
-                <section class="main--section3">
-                    <h2 class="section--h2">“She don’t give a FO”</h2>
-                    <p class="section--p">
-                    Sin dudas, el mayor hit de Duki es “She don’t give a FO”. La sentimental canción que publicó a finales de 2017 junto a Khea y bajo la producción de Omar Varela.</p>
-                </section>
-                <section class="section--audio">
-                    <img src="./assets/img/She don’t give a FO.jpg" alt="She don’t give a FO" class="imagenes--audio">
-                    <p class="section--audio--text">TEMA:  She don’t give a FO</p>
-                    <p class="section--audio--text">ARTISTA:  Duki</p>
-                    <p class="section--audio--text">ALBUM:  She don’t give a FO</p>
-                    
-                    <audio controls src="./assets/audio/Duki - She Don_t Give a FO (ft. Khea) Prod. by Omar Varela.m4a"></audio>
-                </section>
-                <section class="section--text">
-                    <h2 class="section--h3">Colaboraciones</h2>
-                    <p class="section--parrafo1">Una de sus ultimas colaboraciones  fue en la canción del chileno Cris MJ que cuenta con la participación de Nicki Nicole y Duki se apoderó de todas las listas de Spotify.</p>
-                    <iframe class="section--iframe" width="560" height="315" src="https://www.youtube.com/embed/tApmlTnao4g?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </section>
-            </div>
+        </nav>
+    </header>
+    <main class="">
+<!-- **PERFIL ** -->
+        <div class="main__div--1 container-xs d-flex   p-0">
+            <img src="./assets/img/duki img principal.jpg
+            " alt="duki imagen" class="main__div--img">
+            <h1 class="div__h1 ">DUKI</h1>
         </div>
+<!-- ** VIDEO ** -->
+        <div class="container-fluid expand-xl p-0">
+            <video src="./assets/video/duki video.mp4" class="object-fit-contain  " autoplay  onloadedmetadata="this.mu" autoplay loop>
+            </video>
+        </div>
+<!-- ** DESCRIPCION ** -->
+        <div class="container pt-5">
+            <section class="row align-items-lg-center ">
+                <article class="col-12 col-lg-5 p-4">
+                    <p class="article__p"> Mauro Ezequiel Lombardo conocido artísticamente como Duki nació en el año 1996 en Buenos Aires, Argentina. Criado en una casa de melómanos, Duki empezó sentirse atraído por el Hip Hop a la edad de siete años, y entre otras muchas cosas, empezó a sentir mucha atracción por el rap estadounidense. Sin duda alguna las influencias de Duki son esenciales para entender el estilo de este artista de trap.</p>
+                </article>
+                <article class="col-12 col-lg-7  p-4">
+                    <img class="article__img img-fluid " src="./assets/img/9 duki imagen.jpg" alt=" Mauro Ezequiel Lombardo">
+                </article>
+                <article class="col-12 col-lg-5 order-lg-1 p-4">
+                    <p class="article__p">
+                        DUKI SE HA CONVERTIDO EN UNO DE LOS EXPONENTES DEL TRAP DE ARGENTINA EN UN TIEMPO RECORD. SU ESTILO ES FRESCO, ES ÚNICO Y MARCADO POR SUS INICIOS EN EL FREESTYLE. UNA RIMA RÁPIDA. DUKI ES EL TRAPERO ARGENTINO QUE LA ESTA ROMPIENDO DENTRO Y FUERA DE SU PAIS. 
+                    </p>
+                </article>  
+                <article class="col-12 col-lg-7  p-4">
+                    <img class="article__img img-fluid   " src="./assets/img/10 duki imagen.jpg" alt="">
+                </article>
+            
+            </section>
+            <hr class="border-5 m-5">
+        </div>
+<!-- ** CARRUSEL ** -->
+        <div id="carouselExampleFade" class="div__carrusel  m-2 carousel carousel-fade mt-5 ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/3 duki imagen.jpg" class=" d-block w-100 " alt="foto carrusel duki">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/10 duki imagen.jpg" class=" d-block w-100" alt="foto carrusel duki">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/5 duki imagen.jpg" class=" d-block w-100" alt="foto carrusel duki">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/8 duki imagen.jpg" class=" d-block w-100" alt="foto carrusel duki">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/7 duki imagen.jpg" class=" d-block w-100" alt="foto carrusel duki">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <hr class="border-5 m-5">
+        </div>
+<!-- ** CARD DE AUDIO ** -->
+        <div class="container  p-0">
+            <section class="d-flex  row align-items-lg-center pt-5 m-auto">
+                <article class="col-12 col-lg-5">
+                    <h2 class="section__h2 ">“She don’t give a FO”</h2>
+                    <p class="article__p">
+                        Sin dudas, el mayor hit de Duki es “She don’t give a FO”. La sentimental canción que publicó a finales de 2017 junto a Khea y bajo la producción de Omar Varela
+                    </p>
+                </article>
+                <article class="col-12 col-lg-7 m-auto pb-5">
+                    <div class="container__cards m-auto">
+                        <div class="card__audio  d-flex row align-items-center m-auto ">
+                            <div class="cover__card m-auto">
+                                <img  src="./assets/img/She don’t give a FO.jpg" alt="She don’t give a FO" >
+                            </div>
+                                
+                            <p class="section__audio--text  m-0  p-xl-1">TEMA:  She don’t give a FO</p>
+                            <p class="section__audio--text  m-0 p-xl-1">ARTISTA:  Duki</p>
+                            <p class="section__audio--text  m-0 p-xl-1">ALBUM:  She don’t give a FO</p>
+                            <audio class="m-0" controls src="./assets/audio/Duki - She Don_t Give a FO (ft. Khea) Prod. by Omar Varela.m4a"></audio>
+                        </div>
+                </article>
+            </section>
+        </div>
+<!-- ** IFRAME ** -->
+        <section class="container mt-5 mb-5 ">
+            <hr class="border-5 m-5">
+            <h2 class="section__h2">Colaboraciones</h2>
+            <p class="article__p">Una de sus ultimas colaboraciones  fue en la canción del chileno Cris MJ que cuenta con la participación de Nicki Nicole y Duki se apoderó de todas las listas de Spotify.</p>
+            <iframe class="section__iframe m-a" width="100%" height="200" src="https://www.youtube-nocookie.com/embed/Ez2j2qhAl9g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
     </main>
-    <footer class="footer">
-        <div class="footer__div">
-            <!-- EN ESTE LUGAR INTENTO COLOCAR UNOS ICONOS COMO  -->
-            <a class="footer__div--a" href="https://www.facebook.com/DUKISSJ/?locale=es_LA" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-facebook.svg" alt="facebook">
-            </a>
-            <a class="footer__div--a" href="https://www.instagram.com/duki/?hl=es" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-instagram-alt.svg" alt="instagram">
-            </a>
-            <a class="footer__div--a" href="https://twitter.com/dukiupdates?lang=es" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-twitter.svg" alt="twitter">
-            </a>
-            <a class="footer__div--a" href="https://www.youtube.com/@duki9300" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-youtube.svg" alt="youtube">
-            </a>
-            <a class="footer__div--a" href="https://www.tiktok.com/@duki?lang=es" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-tiktok.svg" alt="tiktok">
-            </a>
-            <a class="footer__div--a" href="https://music.apple.com/ar/artist/duki/408527217" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-apple.svg" alt="apple">
-            </a>
-            <a class="footer__div--a" href="https://open.spotify.com/artist/1bAftSH8umNcGZ0uyV7LMg" target="_blank">
-                <img class="a__img" src="./assets/svg/bxl-spotify.svg" alt="spotify">
-            </a>
+    <footer class="footer p-3">
+        <div class="container text-center">
+            <nav class="d-flex justify-content-evenly">
+                <a href="https://www.facebook.com/DUKISSJ/?locale=es_LA" target="_blank">
+                    <i class="bi bi-facebook fs-3"></i>
+                </a>
+                <a href="https://www.instagram.com/duki/?hl=es" target="_blank">
+                    <i class="bi bi-instagram fs-3"></i>
+                </a>
+                <a href="https://twitter.com/dukiupdates?lang=es" target="_blank">
+                    <i class="bi bi-twitter fs-3">
+                </i></a>
+                <a href="https://www.youtube.com/@duki9300" target="_blank">
+                    <i class="bi bi-youtube fs-3"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/1bAftSH8umNcGZ0uyV7LMg" target="_blank">
+                    <i class="bi bi-spotify fs-3"></i>
+                </a>
+                <a href="https://www.tiktok.com/@duki?lang=es" target="_blank">
+                    <i class="bi bi-tiktok fs-3"></i>
+                </a>
+                <a href="https://music.apple.com/ar/artist/duki/408527217" target="_blank">
+                    <i class="bi bi-apple fs-3"></i>
+                </a>
+            </nav>
+            <small class="text-white ">&copy: 2023 @SergioAlba.</small>
         </div>
     </footer>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
