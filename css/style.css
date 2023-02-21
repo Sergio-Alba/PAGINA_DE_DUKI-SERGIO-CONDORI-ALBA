@@ -1,6 +1,16 @@
 /* ****** TIPOGRAFIAS ****** */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,600&display=swap');
 
+
+/* ***** reset los estilos  ***** */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ** var de colores ** */
 :root{
     --header-color:rgba(0, 0, 0, 0.5);
@@ -43,7 +53,6 @@ body{
 }
 .nav-item{
     padding: .5rem;
-    transition: all;
 }
 .nav-item:hover {
     background-color: var(--fondos-color);
@@ -54,11 +63,11 @@ body{
 
 
 .main__div--1{
-    height:60vh;
+    height: 40vh;
     width: 100%;
     position: relative;
-    top: 40vh;
-    margin-bottom:1rem ;
+    padding: 90% 0 0 5%;
+    margin-bottom: 5rem;
 }
 .main__div--img{
     width: 7rem;
@@ -66,10 +75,9 @@ body{
     border-radius: 100px 100px ;
 }
 .div__h1{
-    margin-left: .5rem;
+    margin-left: 5%;
     height: 5rem;
-    font-size: 3rem;
-    padding: 1rem ;
+    font-size: 300%;
     border-bottom: 3px solid rgb(255, 251, 251);
 }
 .container-fluid video{
@@ -86,22 +94,17 @@ body{
 .article__img{
     width: 80vh;
 }
-
-
 /* **CARD DE AUDIO** */
-
-
 .container__cards{
-    width: 90vw;
+    width: 100%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .card__audio{
-    height: 40vh;
-    width:80vw;
-    padding: 1rem;
+    height: 90%;
+    width:100%;
+    padding: 5%;
     box-shadow: 20px 20px 50px rgb(0, 0, 0.5);
     background-color:rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgb(255, 255, 255, 0.5);
@@ -109,21 +112,91 @@ body{
     border-radius: 15px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    display:inline;
+    /* display:inline; */
+    justify-content: center !important;
 }
 .card__audio img{
-    width: 50vw;
-    height: 65%;
-    
+    width: 100%;
 }
 .section__audio--text{
-    font-size: .8rem;
+    font-size: 100%;
+    padding: 3% 0 0 10%;
 }
 .card__audio audio{
-    width:60vw !important;
-    justify-items: center !important;
-    margin: auto;
+    width:80% !important;
+    padding: 10% 0 5%;
 }
+
+
+    /* *** PAGINA ALBUNES *** */
+
+
+    
+    .div__h1--titulo{
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0 2rem 0;
+    }
+    .div__section{
+        height: 60%;
+        width:100%;
+        padding: 1rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.633);
+        background-color:rgba(255, 255, 255, 0.138);
+        border-left: 1px solid rgba(0, 0, 0, 0.6);
+        border-top: 1px solid rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    .img__albunes{
+        width: 100%;
+    }
+    .div__h2{
+        font-size: 150%;
+        text-align: center;
+        margin: 8% 0 0;
+    }
+    .div__p{
+        font-size: 100%;
+        text-align: center;
+        margin: 5% 0 8% 0;
+    }
+    .div__button{
+        margin: .5rem 0 ;
+        height: 3rem;
+        width:100% !important;
+        border: #ffffff83 2px solid ;
+        background:#ffffff33 !important;
+        align-items: center !important;
+        align-content: end;
+        color: #000 !important;
+        font-size: 120% !important;
+    }
+    .button__ol{
+        width: 80vw;    
+    }
+    .li__p{
+        font-size: 70%;
+        padding: 1px;
+    }
+    .div__button a{
+        text-decoration: none !important;
+        color: #000 !important;
+    }
+
+
+
+/* *** PAGINA VIDEOS *** */
+
+
+/* *** PAGINA CONSIERTOS *** */
+
+
+/* *** PAGINA BIOGRAFIA *** */
+
+
+/* *** PAGINA SUSCRIBETE *** */
 
 
 /* ***** ESTILOS DEL FOOTER ***** */
@@ -137,13 +210,6 @@ body{
     margin: 1rem 0;
 }
 
-
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 420px) { 
-    
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 }
@@ -152,7 +218,7 @@ body{
 @media (min-width: 992px) { 
     body{
         font-family: 'Lora', serif;
-        backgrounD: url(../assets/img/fondo\ auror.jpg) no-repeat center ;
+        backgrounD: url(../assets/img/fondo\ aurora.jpg) no-repeat center ;
         background-color: #000;
         background-attachment: fixed;
         background-size: cover;
@@ -165,11 +231,11 @@ body{
         top: 0;
     }
     /* *** MAIN ***/
+    
     .main__div--1{
         position:absolute;
-        height: 50vh;
-        left: 7rem;
-        margin: 0 !important;
+        padding: 30% 0 0 2%;
+        z-index: 10;
     }
     .main__div--img{
         width: 15rem;
@@ -232,12 +298,15 @@ body{
         width: 100%;
     }
     .section__audio--text{
-        font-size: 1rem;
+        font-size: 100%;
+
     }
     .card__audio audio{
+        height: auto;
         width:25vw !important;
         justify-items: center !important;
         margin: auto;
+        padding: 0;
     }
     /* ** IFRAME ** */
     .section__iframe{
@@ -248,6 +317,52 @@ body{
 
     /* *** PAGINA ALBUNES *** */
     
+    .div__h1--titulo{
+        font-size: 4rem;
+        text-align: center;
+        margin: 4rem 0 2rem 0;
+    }    
+    .div__section{
+        height: 60%;
+        width:100%;
+    }
+    .div__h2{
+        font-size: 250%;
+        
+    }
+    .div__p{
+        font-size: 150%;
+        margin: 3% 0 8% 0;
+    }
+    .button__ol{
+        width: 60vw; 
+        z-index: 100 !important;
+    }
+    .li__p{
+        font-size: 100%;
+        padding: 0 2rem ;
+    }
+    .div__button{
+        width: 20vw !important;
+        display:flex;
+        
+    }
+    
+    /* *** PAGINA VIDEOS *** */
+
+
+    /* *** PAGINA CONSIERTOS *** */
+
+
+    /* *** PAGINA BIOGRAFIA *** */
+
+
+    /* *** PAGINA SUSCRIBETE *** */
+
+
+    /* ***** ESTILOS DEL FOOTER ***** */
+
+
 
 }
 
