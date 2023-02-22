@@ -174,7 +174,9 @@ body{
         font-size: 120% !important;
     }
     .button__ol{
-        width: 80vw;    
+        width: 80vw; 
+        height: 11rem;
+        overflow: scroll;
     }
     .li__p{
         font-size: 70%;
@@ -225,7 +227,6 @@ body{
         color: var(--text-color) !important;
         
     } 
-    /* *** HEADER *** */
     .header{
         position: fixed !important;
         top: 0;
@@ -336,7 +337,7 @@ body{
     }
     .button__ol{
         width: 60vw; 
-        z-index: 100 !important;
+        height: 50%;
     }
     .li__p{
         font-size: 100%;
@@ -345,7 +346,7 @@ body{
     .div__button{
         width: 20vw !important;
         display:flex;
-        
+        justify-content: center !important;
     }
     
     /* *** PAGINA VIDEOS *** */
