@@ -176,7 +176,7 @@ body{
     .button__ol{
         width: 80vw; 
         height: 11rem;
-        overflow: scroll;
+        overflow: scroll !important;
     }
     .li__p{
         font-size: 70%;
@@ -346,6 +346,7 @@ body{
     .div__button{
         width: 20vw !important;
         display:flex;
+        overflow: scroll;
         justify-content: center !important;
     }
     
