@@ -1,0 +1,78 @@
+@import "variables";
+@import "mixins";
+.div__h1--titulo{
+    font-size:map-get($titulo, letra );
+    margin: map-get($titulo, margen );
+    padding: map-get($titulo, 1rem );
+}
+.div__formulario{
+    width: 100%;
+    .div__p--suscribise{
+        @include tamaño-letra (.7rem,start);
+    }
+}
+.div__form{
+    background: #000;
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    padding: 1rem;
+    border: 3px solid $borde-color;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    .div__form--input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1.5rem auto;
+        align-items: center;
+        color: #000;
+        input{
+            color: #000;
+        }
+    }
+
+    .div__input--bottom{
+        display: flex;
+        flex-direction:  column;
+        width: 60%;
+        margin: 1.5rem auto;
+        align-items: center;
+        .enviar{
+            width: 100%;
+            padding: .5rem;
+            border:#01bb49 2px solid;
+            background: #000;
+            color: $text-color;
+            display: flex;
+            flex-direction: row;
+            &:hover{
+                background-color: #01bb49;
+                transform: scale(1.2);
+            }
+        }
+        .cancelar{
+            @extend .enviar;
+            border:#ff0000 2px solid;
+            &:hover{
+                background-color: #ff0000;
+                transform: scale(1.2);
+            }
+        }
+        
+    }
+    
+}
+@media screen and(min-width:992px){
+    .div__h1--titulo{
+        padding: map-get($titulo, 2rem );
+    }
+    .div__formulario{
+        width: 50%;
+        .div__p--suscribirse{
+            @include tamaño-letra(1.5rem,center);
+        }
+    }
+    
+}

@@ -1,0 +1,86 @@
+@import "variables";
+@import "mapas";
+@import "mixins";
+
+.div__h1--titulo{
+    font-size:map-get($titulo, letra );
+    margin: map-get($titulo, margen );
+    padding: map-get($titulo, 1rem );
+    }
+.div__p--album{
+        @include tamaño-letra(.8rem,center);
+    }
+    .div__section{
+        height: 60% !important;
+        width:100%;
+        padding: 1rem;
+        box-shadow: 0px 0px 10px rgba(170, 0, 255, 0.918);
+        @include fondo-blur;
+        .img__albunes{
+            width: 100%;
+            border-radius: 15px;
+        } 
+        .div__h2{
+            font-size: 150%;
+            text-align: center;
+            margin: 8% 0 0;}
+        .div__p--fecha{
+            @include tamaño-letra (1.5rem,center)
+        }
+        
+        .div__button{
+            margin: .5rem 0 ;
+            height: 3rem;
+            width:100% !important;
+            border-bottom:$borde-color 1px solid ;
+            background:$text-color;
+            align-items: center !important;
+            align-content: end;
+            color: #000;
+            font-size: 120% !important;
+        }
+        .button__ol{
+            width: 80vw; 
+            height: 11rem;
+            overflow-y: scroll !important;
+            background-color: #414141;
+            .li__p{
+                font-size: 70%;
+                padding: 1px;
+                color: $text-color;
+            }
+        }    
+        .div__button a{
+            text-decoration: none;
+            color: #000000;
+            .bi-spotify {
+                color: #00ad00;
+            }
+        }
+    }
+@media screen and(min-width:992px) {
+    .div__h1--titulo{
+        padding: map-get($titulo, 1.5rem );
+    } 
+    .div__p--album{
+            @include tamaño-letra(1.5rem,center);
+        }
+    .div__section{
+        height: 40%;
+        
+        .div__button{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center ;
+            margin: .5rem auto;
+            height: 3rem;
+            width:30vw !important;
+            border-bottom:$borde-color 1px solid ;
+            background:$text-color;
+            align-items: center !important;
+            color: #000;
+            font-size: 120% !important;
+        }
+    }    
+}

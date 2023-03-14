@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Duki, el artista argentino de música urbana y trap, presenta su nuevo álbum de rap argentino. Descubre las letras de sus nuevas canciones, mira sus videos musicales y consigue entradas para sus próximos conciertos. Disfruta de lo mejor del hip hop latino con Duki, uno de los exponentes más importantes de la música en español.">
+    <meta name="keywords" content="Duki, música urbana, trap argentino, rap argentino, hip hop latino, artista argentino, nueva música, letras de canciones, videos musicales, conciertos">
     <link rel="shortcut icon" href="../assets/img/favicon duki.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -14,10 +15,10 @@
     <link rel="stylesheet" href="../css/style.css">
 
 
-    <title>DUKI PAGINA</title>
+    <title>PAGINA DUKI</title>
 </head>
 <body>
-    <header class="container-fluid sticky-top">
+    <header class="header container-fluid sticky-top">
         <nav class=" navbar navbar-expand-lg navbar-dark ">
             <div class="nav__div container p-2">
                 <a class="navbar-brand" href="../index.html">
@@ -52,37 +53,42 @@
         </nav>
     </header>
     <main class="main">
-        <div class="contenedor--centro">
-            <div class="contenedor__formulario">
-                <h1 class="div__formulario--h1">
-                    SUSCRIBIRSE
-                </h1>
-                <p class="div__formulario--p">suscribete para que resivas notificaciones de eventos que se realizan cerca de tu ciudad</p>
-                <div class="div__formulario">
-                    <form action="">
-                        <ul>
-                        <div>
-                            <label for="name">Nombre:</label>
-                            <input type="text"  name="nombre" />
-                        </div>
-                        <div>
-                            <label for="mail">Correo electrónico:</label>
-                            <input type="email" id="mail" name="email" />
-                        </div>
-                        <div>
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea  name="mensaje"></textarea>
-                        </div>
-                        <div>
-                            <label for="submit"></label>
-                            <input type="submit" value="enviar">
-                        </div>
-                    </form>
-                </div>
+        <div class="container">
+            <h1 class="div__h1--titulo">Suscribete</h1>
+                <hr>
+        <div class="row">
+            <div class="div__formulario">
+                <p class="div__p--suscribirse" >¿Eres fanático de la música urbana y en especial de Duki? Entonces no puedes perderte la oportunidad de unirte a su comunidad oficial en línea. Al suscribirte a la página de Duki, tendrás acceso exclusivo a noticias y actualizaciones sobre sus últimos proyectos, además de información detallada sobre sus próximos conciertos y eventos. Además, como miembro de la comunidad, también podrás disfrutar de contenido exclusivo detrás de cámaras, fotos y videos nunca antes vistos, y ser el primero en enterarte sobre sus últimas colaboraciones con otros artistas de la industria. ¡No esperes más y únete ahora mismo a la página oficial de Duki!
+                </p> 
+            </div>
+            <div class="div__form ">
+                <form action="">
+                    <div class="div__form--input">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="div__form--input">
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="div__form--input ">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea  name="mensaje"></textarea>
+                    </div>
+                    <div class="div__input--bottom">
+                        <label for="submit"></label>
+                        <input class="enviar" type="submit" value="enviar">
+                    </div>
+                    <div class="div__input--bottom">
+                        <label for="submit"></label>
+                        <input class="cancelar" type="submit" value="cancelar">
+                    </div>
+                </form>
             </div>
         </div>
+        </div>
     </main>
-    <footer class="bg-black p-3">
+    <footer class="footer bg-black p-3">
         <div class="container text-center">
             <nav class="d-flex justify-content-evenly">
                 <a href="https://www.facebook.com/DUKISSJ/?locale=es_LA" target="_blank">
@@ -108,9 +114,7 @@
                 </a>
             </nav>
             <small class="text-white ">&copy: 2023 @SergioAlba.</small>
-            
-        </div>
-        
+c        </div>
     </footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

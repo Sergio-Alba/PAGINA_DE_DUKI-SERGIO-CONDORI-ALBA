@@ -1,0 +1,151 @@
+@import"variables";
+@import"mixins";
+
+
+.main__div--1{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    padding: 90% 0 0 5%;
+    margin-bottom: 5rem;
+    .main__div--img{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 100% 100% ;
+    }
+    .div__h1{
+        margin-left: 5%;
+        height: 5rem;
+        font-size: 300%;
+        border-bottom: 3px solid $text-color;
+    }
+}
+.div__video{
+    video{
+        display: none;
+    }
+}
+/* **DESCRIPCION** */
+.article__p , .section__h2{
+    @include tamaño-letra(.8rem,center);
+}
+.section__h2{
+    font-size: 1.5rem !important;
+}
+.section__article{
+    .article__img{
+    width: 80vh;
+    }
+}
+/* **CARRUSEL** */
+.div__carrusel{
+    width: 90%;
+}
+/* **CARD DE AUDIO** */
+.container__cards{
+    width: 100%;
+    margin:  0;
+    display: flex;
+    flex-wrap: wrap;
+    .card__audio{
+        @include fondo-blur;
+        height: 90%;
+        width:100%;
+        padding: 5%;
+        .cover__card img{
+            width: 100%;
+        }
+        .section__audio--text{
+            font-size: .7rem;
+            padding: 2% 0 0 15% !important;
+        }
+        .card__audio audio{
+            width:80% !important;
+            margin: 0 auto 0 auto ;
+            padding: 10% 0 5%;
+        }
+    }
+}
+.section__iframe{
+    padding: 5% 0 !important;
+    width: 100%;
+    height: 40%;
+    iframe{
+        width: 100%;
+        height: 60vw;
+    }
+}
+@media screen and (min-width:992px ) {
+    .main__div--1{
+        position: absolute;
+        padding:0;
+        margin: 28% 0 0 10%;
+        .main__div--img{
+            width: 12rem;
+            height: 12rem;
+        }
+        .div__h1{
+            height: 8rem;
+            font-size: 7rem;
+            padding-right: 30%;
+        }
+    }
+    .div__video{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        video{
+            display: block;
+            width: 100%;
+        }
+    }
+    /* **DESCRIPCION** */
+    .article__p , .section__h2{
+        @include tamaño-letra(1.5rem,center);
+    }
+    .section__h2{
+        font-size: 2rem !important;
+    }
+    .section__article{
+        display: flex;
+        justify-content: center;
+        .article__img{
+            height: 80vh;
+            width: auto;
+            justify-content: center;
+        }
+        
+    }
+    /* **CARRUSEL** */
+    .div__carrusel{
+        height: 90vh !important;
+        width: 50%;
+        margin: auto !important;
+        overflow: hidden;
+    }
+    /* *** CARD DE AUDIO *** */
+    .container__cards{
+        width:30vw ;
+        .card__audio{
+            height: 90%;
+            width:100%;
+            padding: 5%;
+            .cover__card img{
+                height: 10%;
+            }
+            .section__audio--text{
+                font-size: 1rem;
+            }
+        }
+    }
+    .section__iframe{
+        height: 80vh;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 60%;
+            height:100%;
+        }
+    }
+}

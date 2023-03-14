@@ -1,0 +1,42 @@
+@import "variables";
+@import "mapas";
+@import "mixins";
+
+.div__h1--titulo{
+    font-size: map-get($titulo,letra);
+    margin: map-get($titulo, margen);
+    padding: map-get($titulo,1rem);
+}
+.div__p--videos{
+    @include tamaño-letra(.8rem,center);
+}
+.main__div--videos{
+    padding: 0;
+    margin: 0;
+    .div__iframe--videos{
+        margin: 0;
+        padding: 0;
+        height: 55vw;
+        iframe{
+            width: 100%;
+            height: 100%;}
+            .iframe__video{
+                margin-bottom:2em;
+            }
+    }
+}
+    
+@media screen and(min-width:992px){
+    .div__p--videos{
+        @include tamaño-letra(1rem,center);
+    }
+    .main__div--videos{
+        .div__iframe--videos{
+            height: 55vh;
+            iframe{
+                height: 50vh;
+            }
+        }
+    }
+}
+
