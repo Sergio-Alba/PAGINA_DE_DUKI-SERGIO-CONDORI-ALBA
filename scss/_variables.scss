@@ -1,0 +1,14 @@
+$header-color:rgba(0, 0, 0, 0.5);
+$borde-color:rgb(140, 0, 153);
+$text-color:rgb(255, 255, 255);
+$hover-color:rgba(213, 213, 213, 0.2);
+$fondos-color:rgba(255, 255, 255, 0.5);
+$fondo-card:rgba(255, 255, 255, 0.1); 
+@media screen and(min-width:992px){
+        $header-color:rgba(0, 0, 0, 0.5);
+        $borde-color: rgba(18, 11, 61, 0.859);
+        $text-color:rgb(255, 255, 255);
+        $hover-color:rgba(213, 213, 213, 0.2);
+        $fondos-color:rgba(255, 255, 255, 0.5);
+        $fondo-card:rgba(255, 255, 255, 0.1);
+}

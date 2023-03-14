@@ -1,0 +1,14 @@
+@import "variables";
+
+.footer{
+    border-top: 1px solid $text-color ;
+    margin-top: 5rem;
+    a{
+        margin: 1rem 0 !important;
+        .bi{
+            color: $text-color !important;
+            } 
+        &:hover{
+            transform: scale(1.5);}
+    }
+}

@@ -1,0 +1,381 @@
+/* ****** TIPOGRAFIAS ****** */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,600&display=swap');
+
+
+/* ***** reset los estilos  ***** */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ** var de colores ** */
+:root{
+    --header-color:rgba(0, 0, 0, 0.5);
+    --borde-color: rgb(159, 159, 159);
+    --text-color:rgb(255, 255, 255);
+    --fondos-color:rgba(255, 255, 255, 0.1);
+
+}
+
+
+/* ******* ESTILOS BODY ******* */
+
+
+body{
+    font-family: 'Lora', serif;
+    backgrounD: url(../assets/img/fondo\ cel.jpg) no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--text-color) !important;
+} 
+
+
+
+/* ************* MIS ESTILOS CSS *************** */
+
+
+
+/* ** ESTILOS HEADER ** */
+
+.nav__div{
+    background-color: var(--header-color);
+    border-bottom: var(--borde-color) 1px solid;
+    border-radius: 5px;
+}
+.navbar-brand img{
+        height: 3rem;
+}
+.navbar-brand{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-item{
+    padding: .5rem;
+}
+.nav-item:hover {
+    background-color: var(--fondos-color);
+}
+
+
+/* **** ESTILOS DE MAIN PAGINA INDEX.HTML **** */
+
+
+.main__div--1{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    padding: 90% 0 0 5%;
+    margin-bottom: 5rem;
+}
+.main__div--img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100px 100px ;
+}
+.div__h1{
+    margin-left: 5%;
+    height: 5rem;
+    font-size: 300%;
+    border-bottom: 3px solid rgb(255, 251, 251);
+}
+.container-fluid video{
+    display: none;
+}
+.article__p , .section__h2{
+    font-size: .8em !important;
+    text-align: center !important;
+    align-items: center !important;
+}
+.section__h2{
+    font-size: 1.5rem !important;
+}
+.article__img{
+    width: 80vh;
+}
+/* **CARD DE AUDIO** */
+.container__cards{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card__audio{
+    height: 90%;
+    width:100%;
+    padding: 5%;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0.5);
+    background-color:rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* display:inline; */
+    justify-content: center !important;
+}
+.card__audio img{
+    width: 100%;
+}
+.section__audio--text{
+    font-size: 100%;
+    padding: 3% 0 0 10%;
+}
+.card__audio audio{
+    width:80% !important;
+    padding: 10% 0 5%;
+}
+
+
+    /* *** PAGINA ALBUNES *** */
+
+
+    
+    .div__h1--titulo{
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0 2rem 0;
+    }
+    .div__section{
+        height: 60%;
+        width:100%;
+        padding: 1rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.633);
+        background-color:rgba(255, 255, 255, 0.138);
+        border-left: 1px solid rgba(0, 0, 0, 0.6);
+        border-top: 1px solid rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    .img__albunes{
+        width: 100%;
+    }
+    .div__h2{
+        font-size: 150%;
+        text-align: center;
+        margin: 8% 0 0;
+    }
+    .div__p{
+        font-size: 100%;
+        text-align: center;
+        margin: 5% 0 8% 0;
+    }
+    .div__button{
+        margin: .5rem 0 ;
+        height: 3rem;
+        width:100% !important;
+        border: #ffffff83 2px solid ;
+        background:#ffffff33 !important;
+        align-items: center !important;
+        align-content: end;
+        color: #000 !important;
+        font-size: 120% !important;
+    }
+    .button__ol{
+        width: 80vw; 
+        height: 11rem;
+        overflow: scroll !important;
+    }
+    .li__p{
+        font-size: 70%;
+        padding: 1px;
+    }
+    .div__button a{
+        text-decoration: none !important;
+        color: #000 !important;
+    }
+
+
+
+/* *** PAGINA VIDEOS *** */
+
+
+/* *** PAGINA CONSIERTOS *** */
+
+
+/* *** PAGINA BIOGRAFIA *** */
+
+
+/* *** PAGINA SUSCRIBETE *** */
+
+
+/* ***** ESTILOS DEL FOOTER ***** */
+
+
+.footer{
+    background-color: var(--header-color);
+    border-top: 1px solid var(--borde-color) ;
+}
+.footer a{
+    margin: 1rem 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body{
+        font-family: 'Lora', serif;
+        backgrounD: url(../assets/img/fondo\ aurora.jpg) no-repeat center ;
+        background-color: #000;
+        background-attachment: fixed;
+        background-size: cover;
+        color: var(--text-color) !important;
+        
+    } 
+    .header{
+        position: fixed !important;
+        top: 0;
+    }
+    /* *** MAIN ***/
+    
+    .main__div--1{
+        position:absolute;
+        padding: 30% 0 0 2%;
+        z-index: 10;
+    }
+    .main__div--img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .div__h1{
+        margin-left: 2rem;
+        height: 10rem;
+        font-size: 7rem;
+        padding: 2rem 20rem 1rem 4rem;
+        border-bottom: 3px solid rgb(255, 251, 251);
+        bottom: 0;
+    }
+    .container-fluid video{
+        display: block;
+        width: 100%;
+    }
+    .navbar-brand img{
+        height: 5rem;
+        width: auto;
+    }
+    .article__p{
+        font-size: 1.5rem !important;
+    }
+    .article__img{
+        height: auto;
+        width:35vw;
+    }
+    .section__h2{
+        font-size: 2rem !important;
+    }
+    /* *** CARRUSEL *** */
+    .carousel-fade{
+        height: 90vh !important;
+        width: 50%;
+        margin: auto !important;
+        overflow: hidden;
+    }
+    /* *** CARD DE AUDIO *** */
+    .container__cards{
+        width: 20vw;
+    }
+    .card__audio{
+        height: 65vh;
+        width:30vw;
+        padding: 1rem;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0.5);
+        background-color:rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgb(255, 255, 255, 0.5);
+        border-top: 1px solid rgb(255, 255, 255, 0.5);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    .cover__card{
+        width: 15vw;
+        height: auto;
+    }
+    .card__audio img{
+        width: 100%;
+    }
+    .section__audio--text{
+        font-size: 100%;
+
+    }
+    .card__audio audio{
+        height: auto;
+        width:25vw !important;
+        justify-items: center !important;
+        margin: auto;
+        padding: 0;
+    }
+    /* ** IFRAME ** */
+    .section__iframe{
+        width: 80vw;
+        height: 100vh;
+        margin: 5rem 0;
+    }
+
+    /* *** PAGINA ALBUNES *** */
+    
+    .div__h1--titulo{
+        font-size: 4rem;
+        text-align: center;
+        margin: 4rem 0 2rem 0;
+    }    
+    .div__section{
+        height: 60%;
+        width:100%;
+    }
+    .div__h2{
+        font-size: 250%;
+        
+    }
+    .div__p{
+        font-size: 150%;
+        margin: 3% 0 8% 0;
+    }
+    .button__ol{
+        width: 60vw; 
+        height: 50%;
+        overflow: scroll;
+    }
+    .li__p{
+        font-size: 100%;
+        padding: 0 2rem ;
+    }
+    .div__button{
+        width: 20vw !important;
+        display:flex;
+        justify-content: center !important;
+    }
+    
+    /* *** PAGINA VIDEOS *** */
+
+
+    /* *** PAGINA CONSIERTOS *** */
+
+
+    /* *** PAGINA BIOGRAFIA *** */
+
+
+    /* *** PAGINA SUSCRIBETE *** */
+
+
+    /* ***** ESTILOS DEL FOOTER ***** */
+
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+} 
+    
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+

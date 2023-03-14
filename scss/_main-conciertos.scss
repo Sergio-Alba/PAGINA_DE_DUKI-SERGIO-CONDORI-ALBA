@@ -1,0 +1,120 @@
+@import "variables";
+@import "mapas";
+
+.div-contenedor--h1{
+    margin: 2rem 0;
+    .div__h1--titulo{
+    font-size:map-get($titulo, letra );
+    margin: map-get($titulo, margen );
+    padding: map-get($titulo, 1rem );
+    }
+    .div__p--conciertos{
+        @include tamaño-letra(.8rem,center);
+    }
+    
+}
+.main__conciertos ul{
+    margin: 2rem 0 0 0;
+    padding: 0;
+    .li__conciertos{
+        background:$text-color;
+        list-style: none;
+        border-radius: 5px ;
+        width: 100% ;
+        display: flex;
+        align-items: center;text-decoration: none;
+        margin-bottom: 2rem;
+        .datos{
+            width: 20%;
+            height: 7vh;
+            align-content: center;
+            background:$fondos-color;
+            border-radius: 5px ;
+            border: 1px solid $borde-color;
+            color: #1e2126;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .datos__dia{
+                font-size: 1rem;
+                line-height: 14px;
+                margin: 0.5rem; }
+            .datos__mes{
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 2rem;
+                }
+        }
+        .datos__lugar{
+            width: 50%;
+            height: 100%;
+            margin-left: 16px;
+            margin: .5rem 0 ;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .datos__lugar--primario{
+                color: #1e2126;
+                display: block;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18px;
+                margin-bottom: .5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;}
+            .datos__lugar--secundario{
+                color: #6f6f6f;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 0;
+            }
+        }
+        .ul__button{
+            width: 30%;
+            display: inline-block;
+            justify-items:flex-end;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .link__concierto{
+            color: #000;
+            font-size: .8rem;
+            text-decoration: none;
+        }
+    }
+}
+.div__conciertos--img{
+    display:flex;
+    align-items: start;
+    .img{
+        width: 100%;;
+    }
+}
+
+@media screen and (min-width:992px){
+    .div-contenedor--h1{
+    .div__h1--titulo{
+        padding: map-get($titulo, 2rem );
+    }
+    .div__p--conciertos{
+        @include tamaño-letra(1rem,center);
+        margin-bottom:3rem;
+        }
+    }
+    .main__conciertos ul{
+        .li__conciertos{
+            .datos{
+                background:$fondo-card;
+            }
+        }
+    }
+    .div__conciertos--img{
+        .img{
+            position: sticky;
+            top:7rem;
+            margin: 0  !important;
+        }
+    }
+    
+}

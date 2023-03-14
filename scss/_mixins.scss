@@ -1,0 +1,15 @@
+@import"variables";
+
+@mixin fondo-blur {
+    border: 1px solid $borde-color;
+    border-radius: 1rem ;
+    background-color:$fondo-card;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+@mixin tamaño-letra ($letra,$center) {
+    font-size: $letra;
+    text-align: $center;
+    margin: 5% 0 8% 0;
+}
