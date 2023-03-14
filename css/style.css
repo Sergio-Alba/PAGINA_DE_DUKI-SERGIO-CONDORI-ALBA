@@ -1,3 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white; }
 
+body {
+  font-family: 'Lora', serif;
+  background: url(../assets/img/fondo-duki-cel1.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white !important; }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 992px) {
+  body {
+    background: #000 !important; } }
+
+.header .nav__div {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: white 1px solid; }
+  .header .nav__div .navbar-brand {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,   %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0     30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29'    stroke-linecap='round' stroke-miterlimit='10'  stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/ svg%3e"); }
+    .header .nav__div .navbar-brand img {
+      height: 3rem; }
+  .header .nav__div .nav-item {
+    padding: .5rem; }
+    .header .nav__div .nav-item:hover {
+      background-color: rgba(213, 213, 213, 0.2); }
+
+@media screen and (min-width: 992px) {
+  .header {
+    position: sticky !important; }
+    .header .nav__div .nav-item:hover {
+      background-color: rgba(213, 213, 213, 0.2);
+      border-top: 1px solid #8c0099;
+      border-bottom: 1px solid #8c0099; } }
+
+.main__div--1 {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  padding: 90% 0 0 5%;
+  margin-bottom: 5rem; }
+  .main__div--1 .main__div--img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100% 100%; }
+  .main__div--1 .div__h1 {
+    margin-left: 5%;
+    height: 5rem;
+    font-size: 300%;
+    border-bottom: 3px solid white; }
+
+.div__video video {
+  display: none; }
+
+/* **DESCRIPCION** */
+.article__p, .section__h2 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 5% 0 8% 0; }
+
+.section__h2 {
+  font-size: 1.5rem !important; }
+
+.section__article .article__img {
+  width: 80vh; }
+
+/* **CARRUSEL** */
+.div__carrusel {
+  width: 90%; }
+
+/* **CARD DE AUDIO** */
+.container__cards {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .container__cards .card__audio {
+    border: 1px solid #8c0099;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 90%;
+    width: 100%;
+    padding: 5%; }
+    .container__cards .card__audio .cover__card img {
+      width: 100%; }
+    .container__cards .card__audio .section__audio--text {
+      font-size: .7rem;
+      padding: 2% 0 0 15% !important; }
+    .container__cards .card__audio .card__audio audio {
+      width: 80% !important;
+      margin: 0 auto 0 auto;
+      padding: 10% 0 5%; }
+
+.section__iframe {
+  padding: 5% 0 !important;
+  width: 100%;
+  height: 40%; }
+  .section__iframe iframe {
+    width: 100%;
+    height: 60vw; }
+
+@media screen and (min-width: 992px) {
+  .main__div--1 {
+    position: absolute;
+    padding: 0;
+    margin: 28% 0 0 10%; }
+    .main__div--1 .main__div--img {
+      width: 12rem;
+      height: 12rem; }
+    .main__div--1 .div__h1 {
+      height: 8rem;
+      font-size: 7rem;
+      padding-right: 30%; }
+  .div__video {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; }
+    .div__video video {
+      display: block;
+      width: 100%; }
+  /* **DESCRIPCION** */
+  .article__p, .section__h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5% 0 8% 0; }
+  .section__h2 {
+    font-size: 2rem !important; }
+  .section__article {
+    display: flex;
+    justify-content: center; }
+    .section__article .article__img {
+      height: 80vh;
+      width: auto;
+      justify-content: center; }
+  /* **CARRUSEL** */
+  .div__carrusel {
+    height: 90vh !important;
+    width: 50%;
+    margin: auto !important;
+    overflow: hidden; }
+  /* *** CARD DE AUDIO *** */
+  .container__cards {
+    width: 30vw; }
+    .container__cards .card__audio {
+      height: 90%;
+      width: 100%;
+      padding: 5%; }
+      .container__cards .card__audio .cover__card img {
+        height: 10%; }
+      .container__cards .card__audio .section__audio--text {
+        font-size: 1rem; }
+  .section__iframe {
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+    justify-content: center; }
+    .section__iframe iframe {
+      width: 60%;
+      height: 100%; } }
+
+.div__h1--titulo {
+  font-size: 2.5rem;
+  margin: 3rem 0 1rem;
+  padding: 0 0 0 1rem; }
+
+.div__p--album {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 5% 0 8% 0; }
+
+.div__section {
+  height: 60% !important;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(170, 0, 255, 0.918);
+  border: 1px solid #8c0099;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); }
+  .div__section .img__albunes {
+    width: 100%;
+    border-radius: 15px; }
+  .div__section .div__h2 {
+    font-size: 150%;
+    text-align: center;
+    margin: 8% 0 0; }
+  .div__section .div__p--fecha {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5% 0 8% 0; }
+  .div__section .div__button {
+    margin: .5rem 0;
+    height: 3rem;
+    width: 100% !important;
+    border-bottom: #8c0099 1px solid;
+    background: white;
+    align-items: center !important;
+    align-content: end;
+    color: #000;
+    font-size: 120% !important; }
+  .div__section .button__ol {
+    width: 80vw;
+    height: 11rem;
+    overflow-y: scroll !important;
+    background-color: #414141; }
+    .div__section .button__ol .li__p {
+      font-size: 70%;
+      padding: 1px;
+      color: white; }
+  .div__section .div__button a {
+    text-decoration: none;
+    color: #000000; }
+    .div__section .div__button a .bi-spotify {
+      color: #00ad00; }
+
+@media screen and (min-width: 992px) {
+  .div__p--album {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5% 0 8% 0; }
+  .div__section {
+    height: 40%; }
+    .div__section .div__button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: .5rem auto;
+      height: 3rem;
+      width: 30vw !important;
+      border-bottom: #8c0099 1px solid;
+      background: white;
+      align-items: center !important;
+      color: #000;
+      font-size: 120% !important; } }
+
+.div__h1--titulo {
+  font-size: 2.5rem;
+  margin: 3rem 0 1rem;
+  padding: 0 0 0 1rem; }
+
+.div__p--videos {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 5% 0 8% 0; }
+
+.main__div--videos {
+  padding: 0;
+  margin: 0; }
+  .main__div--videos .div__iframe--videos {
+    margin: 0;
+    padding: 0;
+    height: 55vw; }
+    .main__div--videos .div__iframe--videos iframe {
+      width: 100%;
+      height: 100%; }
+    .main__div--videos .div__iframe--videos .iframe__video {
+      margin-bottom: 2em; }
+
+@media screen and (min-width: 992px) {
+  .div__p--videos {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5% 0 8% 0; }
+  .main__div--videos .div__iframe--videos {
+    height: 55vh; }
+    .main__div--videos .div__iframe--videos iframe {
+      height: 50vh; } }
+
+.div-contenedor--h1 {
+  margin: 2rem 0; }
+  .div-contenedor--h1 .div__h1--titulo {
+    font-size: 2.5rem;
+    margin: 3rem 0 1rem;
+    padding: 0 0 0 1rem; }
+  .div-contenedor--h1 .div__p--conciertos {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5% 0 8% 0; }
+
+.main__conciertos ul {
+  margin: 2rem 0 0 0;
+  padding: 0; }
+  .main__conciertos ul .li__conciertos {
+    background: white;
+    list-style: none;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 2rem; }
+    .main__conciertos ul .li__conciertos .datos {
+      width: 20%;
+      height: 7vh;
+      align-content: center;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      border: 1px solid #8c0099;
+      color: #1e2126;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .main__conciertos ul .li__conciertos .datos .datos__dia {
+        font-size: 1rem;
+        line-height: 14px;
+        margin: 0.5rem; }
+      .main__conciertos ul .li__conciertos .datos .datos__mes {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2rem; }
+    .main__conciertos ul .li__conciertos .datos__lugar {
+      width: 50%;
+      height: 100%;
+      margin-left: 16px;
+      margin: .5rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .main__conciertos ul .li__conciertos .datos__lugar .datos__lugar--primario {
+        color: #1e2126;
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: .5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .main__conciertos ul .li__conciertos .datos__lugar .datos__lugar--secundario {
+        color: #6f6f6f;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0; }
+    .main__conciertos ul .li__conciertos .ul__button {
+      width: 30%;
+      display: inline-block;
+      justify-items: flex-end;
+      border-radius: 8px;
+      overflow: hidden; }
+    .main__conciertos ul .li__conciertos .link__concierto {
+      color: #000;
+      font-size: .8rem;
+      text-decoration: none; }
+
+.div__conciertos--img {
+  display: flex;
+  align-items: start; }
+  .div__conciertos--img .img {
+    width: 100%; }
+
+@media screen and (min-width: 992px) {
+  .div-contenedor--h1 .div__p--conciertos {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5% 0 8% 0;
+    margin-bottom: 3rem; }
+  .main__conciertos ul .li__conciertos .datos {
+    background: rgba(255, 255, 255, 0.1); }
+  .div__conciertos--img .img {
+    position: sticky;
+    top: 7rem;
+    margin: 0  !important; } }
+
+.div__h1--titulo {
+  font-size: 2.5rem;
+  margin: 3rem 0 1rem;
+  padding: 0 0 0 1rem; }
+
+.div__p--biografia {
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 5% 0 8% 0; }
+
+.img__biografia {
+  width: 100%; }
+
+.table {
+  color: white;
+  font-size: 1rem;
+  width: 60%;
+  margin: auto; }
+  .table td, .table th {
+    border: solid 2px #fff;
+    padding: 0.5rem; }
+  .table th {
+    font-size: .8rem; }
+  .table td {
+    font-size: .5rem;
+    overflow: hidden; }
+
+@media screen and (min-width: 992px) {
+  .div__p--biografia {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5% 0 8% 0; }
+  .table {
+    width: 60%;
+    margin: auto;
+    font-size: 2rem; }
+    .table td {
+      font-size: 1rem;
+      overflow: hidden; } }
+
+.div__h1--titulo {
+  font-size: 2.5rem;
+  margin: 3rem 0 1rem;
+  padding: 0 0 0 1rem; }
+
+.div__formulario {
+  width: 100%; }
+  .div__formulario .div__p--suscribise {
+    font-size: 0.7rem;
+    text-align: start;
+    margin: 5% 0 8% 0; }
+
+.div__form {
+  background: #000;
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+  padding: 1rem;
+  border: 3px solid #8c0099;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .div__form .div__form--input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5rem auto;
+    align-items: center;
+    color: #000; }
+    .div__form .div__form--input input {
+      color: #000; }
+  .div__form .div__input--bottom {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 1.5rem auto;
+    align-items: center; }
+    .div__form .div__input--bottom .enviar, .div__form .div__input--bottom .cancelar {
+      width: 100%;
+      padding: .5rem;
+      border: #01bb49 2px solid;
+      background: #000;
+      color: white;
+      display: flex;
+      flex-direction: row; }
+      .div__form .div__input--bottom .enviar:hover, .div__form .div__input--bottom .cancelar:hover {
+        background-color: #01bb49;
+        transform: scale(1.2); }
+    .div__form .div__input--bottom .cancelar {
+      border: #ff0000 2px solid; }
+      .div__form .div__input--bottom .cancelar:hover {
+        background-color: #ff0000;
+        transform: scale(1.2); }
+
+@media screen and (min-width: 992px) {
+  .div__formulario {
+    width: 50%; }
+    .div__formulario .div__p--suscribirse {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 5% 0 8% 0; } }
+
+.footer {
+  border-top: 1px solid white;
+  margin-top: 5rem; }
+  .footer a {
+    margin: 1rem 0 !important; }
+    .footer a .bi {
+      color: white !important; }
+    .footer a:hover {
+      transform: scale(1.5); }

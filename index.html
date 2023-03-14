@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Duki, el artista argentino de música urbana y trap, presenta su nuevo álbum de rap argentino. Descubre las letras de sus nuevas canciones, mira sus videos musicales y consigue entradas para sus próximos conciertos. Disfruta de lo mejor del hip hop latino con Duki, uno de los exponentes más importantes de la música en español.">
+    <meta name="keywords" content="Duki, música urbana, trap argentino, rap argentino, hip hop latino, artista argentino, nueva música, letras de canciones, videos musicales, conciertos">
+
+
 
     <link rel="shortcut icon" href="./assets/img/favicon duki.ico" type="image/x-icon">
 
@@ -14,14 +18,16 @@
     <link rel="stylesheet" href="./css/style.css">
 
 
-    <title>DUKI PAGINA</title>
+    <title>PAGINA DUKI</title>
 </head>
 <body>
-    <header class="header container-fluid  sticky-top ">
+<!-- **header**  -->
+    <header class="header container-fluid sticky-top">
         <nav class=" navbar navbar-expand-lg navbar-dark ">
             <div class="nav__div container p-2 ">
-                <a class="navbar-brand" href="#">
-                    <img class="m-auto" src="./assets/img/logo duki.png" alt="LOGO DUKI"></a>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logo duki.png" alt="LOGO DUKI">
+                </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
                 </button>
@@ -51,41 +57,43 @@
         </nav>
     </header>
     <main class="">
-<!-- **PERFIL ** -->
+    <!-- **PERFIL ** -->
         <div class="main__div--1 container d-flex col ">
             <img src="./assets/img/duki img principal.jpg
             " alt="duki imagen" class="main__div--img">
             <h1 class="div__h1 ">DUKI</h1>
         </div>
-<!-- ** VIDEO ** -->
-        <div class="container-fluid expand-xl p-0">
-            <video src="./assets/video/duki video.mp4" class="object-fit-contain  " autoplay  onloadedmetadata="this.mu" autoplay loop>
+    <!-- ** VIDEO ** -->
+        <div class="div__video container-fluid expand-xl p-0">
+            <video src="./assets/video/fondo1.1.mp4" class="object-fit-contain  " autoplay  onloadedmetadata="this.mu" autoplay loop>
             </video>
         </div>
-<!-- ** DESCRIPCION ** -->
+    <!-- ** DESCRIPCION ** -->
         <div class="container p-3">
             <section class="row align-items-lg-center ">
                 <article class="col-12 col-lg-5 p-4">
                     <p class="article__p"> Mauro Ezequiel Lombardo conocido artísticamente como Duki nació en el año 1996 en Buenos Aires, Argentina. Criado en una casa de melómanos, Duki empezó sentirse atraído por el Hip Hop a la edad de siete años, y entre otras muchas cosas, empezó a sentir mucha atracción por el rap estadounidense. Sin duda alguna las influencias de Duki son esenciales para entender el estilo de este artista de trap.</p>
                 </article>
-                <article class="col-12 col-lg-7  p-4">
-                    <img class="article__img img-fluid " src="./assets/img/9 duki imagen.jpg" alt=" Mauro Ezequiel Lombardo">
+                <article class="section__article col-12 col-lg-7  p-4 mb-4">
+                    <img class="article__img img-fluid  " src="./assets/img/9 duki imagen.jpg" alt=" foto de Duki">
                 </article>
-                <article class="col-12 col-lg-5 order-lg-1 p-4">
+                <hr >
+                <article class="col-12 col-lg-5 order-lg-1 p-4 mt-4">
                     <p class="article__p">
-                        DUKI SE HA CONVERTIDO EN UNO DE LOS EXPONENTES DEL TRAP DE ARGENTINA EN UN TIEMPO RECORD. SU ESTILO ES FRESCO, ES ÚNICO Y MARCADO POR SUS INICIOS EN EL FREESTYLE. UNA RIMA RÁPIDA. DUKI ES EL TRAPERO ARGENTINO QUE LA ESTA ROMPIENDO DENTRO Y FUERA DE SU PAIS. 
+                        Duki se ha convertido en uno de los exponentes del trap de argentina en un 
+                        tiempo record. Su estilo es fresco, es
+                        único y marcado por sus inicios en el freestyle. Una rima rapidá. Duki es el trapero argentino que la esta ropiendo dentro y fuera de su pais.
                     </p>
                 </article>  
-                <article class="col-12 col-lg-7  p-4">
-                    <img class="article__img img-fluid   " src="./assets/img/10 duki imagen.jpg" alt="">
+                <article class="section__article col-12 col-lg-7  p-4">
+                    <img class="article__img img-fluid   " src="./assets/img/4 duki imagen.jpg" alt="foto de Duki">
                 </article>
-            
             </section>
             <hr class="border-5 m-5">
         </div>
-<!-- ** CARRUSEL ** -->
-        <div id="carouselExampleFade" class="div__carrusel  m-2 carousel carousel-fade mt-5 ">
-            <div class="carousel-inner">
+    <!-- ** CARRUSEL ** -->
+        <div id="carouselExampleAutoplaying" class="div__carrusel  m-auto carousel slider mt-5  " data-bs-ride="carousel">
+            <div class="carousel-inner ">
                 <div class="carousel-item active">
                     <img src="./assets/img/3 duki imagen.jpg" class=" d-block w-100 " alt="foto carrusel duki">
                 </div>
@@ -102,17 +110,17 @@
                     <img src="./assets/img/7 duki imagen.jpg" class=" d-block w-100" alt="foto carrusel duki">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
             <hr class="border-5 m-5">
         </div>
-<!-- ** CARD DE AUDIO ** -->
+    <!-- ** CARD DE AUDIO ** -->
         <div class="container  p-0">
             <section class="d-flex  row align-items-lg-center pt-5 m-auto">
                 <article class="col-12 col-lg-5">
@@ -125,26 +133,31 @@
                     <div class="container__cards m-auto">
                         <div class="card__audio  d-flex row  m-auto ">
                             <div class="cover__card m-auto">
-                                <img  src="./assets/img/She don’t give a FO.jpg" alt="She don’t give a FO" >
+                                <img  src="./assets/img/she don’t give a FO.jpg" alt="imagen del tema She don’t give a FO" >
                             </div>
                                 
                             <p class="section__audio--text  m-0  p-xl-1">TEMA:  She don’t give a FO</p>
                             <p class="section__audio--text  m-0 p-xl-1">ARTISTA:  Duki</p>
                             <p class="section__audio--text  m-0 p-xl-1">ALBUM:  She don’t give a FO</p>
-                            <audio class="m-0" controls src="./assets/audio/Duki - She Don_t Give a FO (ft. Khea) Prod. by Omar Varela.m4a"></audio>
+                            <audio controls src="./assets/audio/Duki - She Don_t Give a FO (ft. Khea) Prod. by Omar Varela.m4a"></audio>
                         </div>
                 </article>
             </section>
         </div>
-<!-- ** IFRAME ** -->
+    <!-- ** IFRAME ** -->
         <section class="container mt-5 mb-5 ">
             <hr class="border-5 m-5">
-            <h2 class="section__h2">Colaboraciones</h2>
-            <p class="article__p">Una de sus ultimas colaboraciones  fue en la canción del chileno Cris MJ que cuenta con la participación de Nicki Nicole y Duki se apoderó de todas las listas de Spotify.</p>
-            <iframe class="section__iframe m-a" width="100%" height="200" src="https://www.youtube-nocookie.com/embed/Ez2j2qhAl9g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2 class="section__h2">Novedades</h2>
+            <p class="article__p">Duki vuelve a lanzar música propia luego de más de 200 días, con el estreno de su nuevo single, "Si Me Sobrara El Tiempo". En este trap, el artista indaga en el concepto de las profundidades del paso del tiempo y en la importancia que tiene en nuestras vidas.
+
+            En la previa de este lanzamiento, Duki se borró de sus redes con la frase “Desaparezco de la faz de la tierra por un fin de semana”, alterando sus fotos de perfil y su imagen de las portadas de sus lanzamientos en Spotify y Youtube, generando gran repercusión en sus seguidores y medios de comunicación</p>
+            <div class="section__iframe">
+                <iframe   src="https://www.youtube-nocookie.com/embed/Ez2j2qhAl9g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
-    <footer class="footer p-3">
+<!-- **footer** -->
+    <footer class="footer bg-black p-3">
         <div class="container text-center">
             <nav class="d-flex justify-content-evenly">
                 <a href="https://www.facebook.com/DUKISSJ/?locale=es_LA" target="_blank">
