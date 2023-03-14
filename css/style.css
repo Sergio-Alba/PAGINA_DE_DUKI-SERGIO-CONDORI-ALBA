@@ -241,7 +241,9 @@ body {
       background: white;
       align-items: center !important;
       color: #000;
-      font-size: 120% !important; } }
+      font-size: 120% !important; }
+    .div__section .button__ol {
+      width: 30vw; } }
 
 .div__h1--titulo {
   font-size: 2.5rem;
@@ -471,7 +473,9 @@ body {
     .div__formulario .div__p--suscribirse {
       font-size: 1.5rem;
       text-align: center;
-      margin: 5% 0 8% 0; } }
+      margin: 5% 0 8% 0; }
+  .div__form {
+    width: 40%; } }
 
 .footer {
   border-top: 1px solid white;
