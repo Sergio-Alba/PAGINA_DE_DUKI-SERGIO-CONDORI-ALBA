@@ -12,11 +12,15 @@
 .img__biografia{
     width: 100%;
 }
+.div__p{
+    margin:3rem 0; 
+}
 .table{
     color: $text-color;
     font-size:1rem;
     width: 60%;
     margin:  auto;
+    padding: 2rem;
     td , th{
     border: solid 2px #fff;
     padding: 0.5rem;
@@ -38,14 +42,17 @@
     .div__p--biografia{
         @include tamaño-letra(1rem,center);
     }
-    .table{
-        width: 60%;
-        margin:  auto;
-        font-size:2rem;
-        td{
-            font-size: 1rem;
-            overflow: hidden;
+    .div__p{
+        .table{
+            width: 60%;
+            margin:  auto;
+            font-size:2rem;
+            td{
+                font-size: 1rem;
+                overflow: hidden;
+            }
         }
     }
+    
 
 }

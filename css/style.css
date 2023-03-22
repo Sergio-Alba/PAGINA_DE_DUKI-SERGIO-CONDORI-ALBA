@@ -386,11 +386,15 @@ body {
 .img__biografia {
   width: 100%; }
 
+.div__p {
+  margin: 3rem 0; }
+
 .table {
   color: white;
   font-size: 1rem;
   width: 60%;
-  margin: auto; }
+  margin: auto;
+  padding: 2rem; }
   .table td, .table th {
     border: solid 2px #fff;
     padding: 0.5rem; }
@@ -405,11 +409,11 @@ body {
     font-size: 1rem;
     text-align: center;
     margin: 5% 0 8% 0; }
-  .table {
+  .div__p .table {
     width: 60%;
     margin: auto;
     font-size: 2rem; }
-    .table td {
+    .div__p .table td {
       font-size: 1rem;
       overflow: hidden; } }
 
@@ -486,3 +490,28 @@ body {
       color: white !important; }
     .footer a:hover {
       transform: scale(1.5); }
+
+.main__404 .main__div--404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main__404 .main__div--404 .main__div--h1--404 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem 0; }
+  .main__404 .main__div--404 .main__div--p--404 {
+    margin-top: 3rem;
+    background: #00000076;
+    border-radius: 2rem;
+    font-size: .8rem; }
+
+@media screen and (min-width: 992px) {
+  .main__404 {
+    background: url(../assets/img/img404error.jpg) no-repeat center;
+    height: 70vh;
+    width: 100vw; }
+    .main__404 .main__div--404 .main__div--h1--404 {
+      font-size: 7rem; }
+    .main__404 .main__div--404 .main__div--p--404 {
+      font-size: 1.5rem; } }

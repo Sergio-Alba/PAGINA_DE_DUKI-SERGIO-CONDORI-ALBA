@@ -1,0 +1,41 @@
+
+
+.main__404{
+    .main__div--404{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        .main__div--h1--404{
+            font-size: 4rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .main__div--p--404 {
+            margin-top: 3rem;
+            background: #00000076;
+            border-radius: 2rem;
+            font-size: .8rem;
+        }
+    }
+} 
+
+
+  ///eliminan el fondo para destok
+
+@media screen and (min-width:992px){
+    .main__404{
+        background: url(../assets/img/img404error.jpg) no-repeat  center ;
+        height: 70vh;
+        width: 100vw;
+        .main__div--404{
+            .main__div--h1--404{
+                font-size: 7rem;
+            }
+            .main__div--p--404 {
+                font-size: 1.5rem;
+            }
+        }
+    } 
+    
+}
